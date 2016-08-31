@@ -1,0 +1,64 @@
+body {
+    background-color: #000;
+    color: #FFF;
+    font-family: 'Unica One';
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+h1 a {
+    text-decoration: none;
+    color: #DDD;
+}
+
+#main {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    margin: 4em auto;
+    padding: 2em;
+}
+
+.window, .window-text {
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+}
+.window {
+    border-radius: 200px;
+    border: 10px double #FFF;
+    overflow: hidden;
+}
+.window img {
+    max-height: 400px;
+}
+
+.window-text {
+    overflow: visible;
+    height: 0px;
+}
+.window-text * {
+    position: absolute;
+    display: block;
+}
+.window-text .top {
+    top: 0;
+    left: 200px;
+}
+.window-text .right {
+    transform: rotate(90deg);
+    right: 0;
+    top: 200px;
+}
+.window-text .bottom {
+    transform: rotate(180deg);
+    bottom: 0;
+    right: 200px;
+}
+.window-text .left {
+    transform: rotate(-90deg);
+    left: 0;
+    bottom: 200px;
+}
