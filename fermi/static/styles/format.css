@@ -33,29 +33,30 @@ small {
 
 #main {
     position: relative;
-    height: 400px;
-    width: 400px;
+    height: 600px;
+    width: 600px;
     margin: 4em auto;
     padding: 0em;
 }
 
 .window {
-    height: 400px;
-    width: 400px;
+    height: 600px;
+    width: 600px;
     margin: 0 auto;
-    border-radius: 200px;
+    border-radius: 300px;
     overflow: hidden;
 }
 .window img {
-    max-height: 400px;
+    min-height: 600px;
+    min-width: 600px;
 }
 
 .window-overlay {
     background-image: url('../images/wov.png');
     opacity: 0.2;
-    height: 400px;
-    width: 400px;
-    border-radius: 200px;
+    height: 600px;
+    width: 600px;
+    border-radius: 300px;
     position: absolute;
     top: 0;
 }
