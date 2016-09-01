@@ -4,7 +4,7 @@ $('#main').click(function () {
 
 var setRoom = function () {
     room = Math.floor(Math.random() * rooms.length);
-    $('#room').attr('src', 'static/images/rooms/' + rooms[room]);
+    $('#room').attr('src', 'static/images/rooms/full/' + rooms[room]);
 };
 
 setRoom();
