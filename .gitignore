@@ -1,1 +1,3 @@
 *.swp
+fermi/static/images/rooms/full/*.jpg
+.DS_Store
