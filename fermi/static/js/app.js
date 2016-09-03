@@ -12,6 +12,7 @@ var setRoom = function () {
     }
     room = Math.floor(Math.random() * rooms.length);
     $('#room').attr('src', 'static/images/rooms/full/' + rooms[room][0]);
+    $('#quote').css('color', rooms[room][1]);
 
     // move arrow
     position += 1;
