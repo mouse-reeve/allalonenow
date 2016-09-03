@@ -3,6 +3,7 @@ $('#main').click(function () {
 });
 
 var roomstack = [];
+var position = -1;
 
 var setRoom = function () {
     var current = $('#room').attr('src');
@@ -11,6 +12,10 @@ var setRoom = function () {
     }
     room = Math.floor(Math.random() * rooms.length);
     $('#room').attr('src', 'static/images/rooms/full/' + rooms[room]);
+
+    // move arrow
+    position += 1;
+    $('#arrow').css('transform', 'rotate(' + position + 'deg)');
 };
 
 setRoom();
