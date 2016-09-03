@@ -15,4 +15,5 @@ for filename in glob.glob('fermi/static/images/rooms/full/*.jpg'):
 
     center = np.uint8(center)[0]
     code = 'rgb(%d, %d, %d)' % (center[2], center[1], center[0])
+    filename = filename.split('/')[-1]
     print '[\'%s\', \'%s\']' % (filename, code)
