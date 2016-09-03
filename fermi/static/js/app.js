@@ -11,7 +11,7 @@ var setRoom = function () {
         roomstack.push(current);
     }
     room = Math.floor(Math.random() * rooms.length);
-    $('#room').attr('src', 'static/images/rooms/full/' + rooms[room]);
+    $('#room').attr('src', 'static/images/rooms/full/' + rooms[room][0]);
 
     // move arrow
     position += 1;
