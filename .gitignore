@@ -4,3 +4,4 @@ fermi/static/images/rooms/full/*.jpg
 rooms.js
 venv/
 .Python
+*.pyc

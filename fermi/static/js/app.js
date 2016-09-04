@@ -1,4 +1,4 @@
-$('#main').click(function () {
+$('.window-overlay').click(function () {
     setRoom();
 });
 
@@ -11,9 +11,13 @@ $('html').keydown(function(e){
     }
 });
 
-var position = -1;
+$('.volume').click(function () {
+    toggleSound();
+});
 
+var position = -1;
 var room = Math.floor(Math.random() * (rooms.length - 1));
+var muted = true;
 
 var setRoom = function () {
     room++;
@@ -45,4 +49,14 @@ var backRoom = function () {
     $('#arrow').css('transform', 'rotate(' + position + 'deg)');
 };
 
+var toggleSound = function () {
+    if (muted) {
+        $('.volume i').attr('class', 'icon-volume-high');
+    } else {
+        $('.volume i').attr('class', 'icon-volume-mute');
+    }
+    muted = !muted;
+};
+
+// load first image
 setRoom();

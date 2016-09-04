@@ -13,12 +13,12 @@ header {
     margin-bottom: 3em;
 }
 
-h1 {
-    color: #888;
+h1, h2 {
+    color: #777;
     text-transform: uppercase;
     letter-spacing: 0.2em;
 }
-h1 a {
+h1 a, h1 span, h2 a {
     text-decoration: none;
     color: #555;
 }
@@ -33,6 +33,10 @@ blockquote {
 }
 small {
     color: #BBB;
+}
+
+.clickable {
+    cursor: pointer;
 }
 
 #main {
@@ -84,4 +88,22 @@ small {
 .window-overlay {
     background-image: url('../images/wov.png');
     opacity: 0.2;
+}
+
+.controls {
+    color: #777;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.volume {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+.tip {
+    color: #444;
+    font-family: 'Open Sans';
+}
+
+footer {
+    margin-top: 6em;
 }

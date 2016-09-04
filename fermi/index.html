@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link type="text/css" rel="stylesheet" href="static/styles/format.css">
+    <link type="text/css" rel="stylesheet" href="static/styles/icons.css">
     <link href="https://fonts.googleapis.com/css?family=Unica+One|Open+Sans" rel="stylesheet">
 
     <!-- Piwik -->
@@ -29,7 +30,7 @@
 
     <header>
         <h1>
-            <a href="https://itch.io/jam/fermi-paradox-jam" target="_blank">#FermiJam</a>
+            <span>All</span>Alone<span>Now</spa>
         </h1>
     </header>
 
@@ -43,12 +44,19 @@
         <div class="window">
             <img id="room" alt="empty room">
         </div>
-        <div class="window-overlay">
+        <div class="window-overlay clickable">
+        </div>
+    </div>
+
+    <div class="controls">
+        <div class="volume clickable"><i class="icon-volume-mute"></i></div>
+        <div class="tip">
+            (navigate with <i class="icon-arrow-left"></i> arrow <i class="icon-arrow-right"></i> keys)
         </div>
     </div>
 
     <footer>
-        <h1>Created by <a href="https://www.mousereeve.com/">Mouse Reeve</a></h1>
+        <h2>Created by <a href="https://www.mousereeve.com/">Mouse Reeve</a> Music by <a href="http://emilyemeo.com/">Emily E. Meo</a></h2>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8=" crossorigin="anonymous"></script>
