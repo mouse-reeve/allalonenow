@@ -15,4 +15,4 @@ for filename in glob.glob('fermi/static/images/rooms/full/*.jpg'):
 
     center = np.uint8(center)[0]
     filename = filename.split('/')[-1]
-    print filename, center[0], center[1], center[2]
+    print filename, center[2], center[1], center[0]

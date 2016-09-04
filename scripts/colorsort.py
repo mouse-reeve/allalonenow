@@ -10,7 +10,8 @@ try:
         for line in lines:
             line = line.strip()
             line = line.split(' ')
-            colors.append(line)
+            if len(line) == 4:
+                colors.append(line)
 except KeyError:
     exit()
 
