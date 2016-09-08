@@ -83,6 +83,7 @@ small {
 .window img {
     min-height: 600px;
     min-width: 600px;
+    position: absolute;
 }
 
 .window-overlay {
