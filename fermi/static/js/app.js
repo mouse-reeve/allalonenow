@@ -30,8 +30,8 @@ var setRoom = function () {
 
     $('#room').clone().attr('src', 'static/images/rooms/full/' + rooms[room][0]).attr('id', 'newRoom').hide().css('opacity', 1).appendTo('.window');
     $('#room').attr('id', 'oldRoom');
-    $('#newRoom').fadeIn(250);
-    $('#oldRoom').fadeOut(250, function () {
+    $('#newRoom').fadeIn();
+    $('#oldRoom').fadeOut(function () {
         $('#oldRoom').remove();
     });
     $('#oldRoom').addClass('zombie');
