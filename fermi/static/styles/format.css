@@ -11,6 +11,7 @@ body {
 
 header {
     margin-bottom: 3em;
+    overflow: auto;
 }
 
 h1, h2 {
@@ -22,6 +23,10 @@ h1 a, h1 span, h2 a {
     text-decoration: none;
     color: #555;
 }
+h1 {
+    float: left;
+}
+
 a:hover {
     text-decoration: underline;
 }
@@ -91,17 +96,16 @@ small {
     opacity: 0.2;
 }
 
-.controls {
-    color: #777;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-}
 .volume {
+    color: #777;
     font-size: 2em;
     margin-bottom: 0.5em;
+    float: right;
 }
 .tip {
     color: #444;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
     font-family: 'Open Sans';
 }
 
