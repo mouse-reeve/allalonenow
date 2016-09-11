@@ -20,5 +20,5 @@ colors.sort(key=lambda (_, r, g, b): hilbert.Hilbert_to_int([int(r*255), int(g*2
 # format javascript file (this aint no hack)
 print 'var rooms = ['
 for color in colors:
-    print '["%s", "rgb(%s, %s, %s)"],' % (color[0], color[1], color[2], color[3])
+    print '["%s", [%s, %s, %s]],' % (color[0], color[1], color[2], color[3])
 print '];'
