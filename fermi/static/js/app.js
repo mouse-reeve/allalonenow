@@ -50,7 +50,6 @@ var setRoom = function (back) {
     $('#quote').css('color', color);
 
     track = getTrack(rgb[0], rgb[1], rgb[2]);
-    console.log(track);
 
     // move arrow
     position += back;
@@ -101,12 +100,10 @@ var playAudio = function () {
     var current = $('.playing').attr('id')
     if (!current) {
         // start audio if nothing is playing
-        console.log('starting audio');
         $(id).trigger('play');
         $(id).addClass('playing');
     } else if (current != id){
         // switch tracks
-        console.log('starting audio ' + track);
         $('.playing').trigger('pause');
         $(id).trigger('play');
 
@@ -114,7 +111,6 @@ var playAudio = function () {
         $($('audio')[1]).addClass('playing');
     } else {
         // continue looping
-        console.log('loopalong');
         $(id).trigger('play');
     }
 };
